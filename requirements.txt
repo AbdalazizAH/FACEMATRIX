@@ -10,6 +10,8 @@ passlib[bcrypt]
 python-jose[cryptography]
 mysqlclient
 pymysql
+sqlalchemy-utils
+mysql-connector-python
 # pydantic[email]
 
 # ai dependencies
