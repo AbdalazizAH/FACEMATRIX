@@ -5,6 +5,12 @@ if not have python 3.12 go to install "dlib-19.24.99-cp312-cp312-win_amd64.whl" 
 from this repo in Gihtub "https://github.com/Silufer/dlib-python"
 and modifie the requirements/depmdesy.py line 22
 
+create env # Optional
+```bash
+python -m venv env  
+env\Scripts\activate  # Windows
+```
+
 1. install dependencies
 ```bash
 python requirements/depmdesy.py
