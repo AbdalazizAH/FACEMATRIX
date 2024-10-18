@@ -1,0 +1,17 @@
+* {
+  font-family: "Alexandria", serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+input:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

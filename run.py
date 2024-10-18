@@ -1,6 +1,7 @@
 from datetime import timedelta
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 
 # database connection
@@ -10,6 +11,7 @@ from api.router import FacesRO
 from api.router import RecognizedFaceRO
 from api.router import UnrecognizedFaceRO
 from api.router import AdminRO
+from AI import AiRO
 # schema for validation user input
 from api.Schema.AdminSC import AdminLogin
 
@@ -32,8 +34,11 @@ app.add_middleware(
 
 
 # init router
+app.mount("/static", StaticFiles(directory="./static"), name="static")
+    
 app.include_router(AdminRO.router)
 app.include_router(FacesRO.router)
+app.include_router(AiRO.router)
 app.include_router(RecognizedFaceRO.router)
 app.include_router(UnrecognizedFaceRO.router)
 

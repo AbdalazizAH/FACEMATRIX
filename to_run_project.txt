@@ -1,0 +1,31 @@
+to run this project 
+
+make sure you have python 3.12
+if not have python 3.12 go to install "dlib-19.24.99-cp312-cp312-win_amd64.whl"  fro your version of python 
+from this repo in Gihtub "https://github.com/Silufer/dlib-python"
+and modifie the requirements/depmdesy.py line 22
+
+1. install dependencies
+```bash
+python requirements/depmdesy.py
+```
+
+2. run xampp and start apache and mysql
+
+
+3. create database and table
+```bash
+python temp.py
+```
+
+4. run the project
+```bash
+uvicorn run:app --reload
+```
+
+now you can use this project
+for Ai endpot localhost:8000/
+for api endpot localhost:8000/docs
+
+
+
